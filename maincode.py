@@ -1,10 +1,8 @@
 import plotly.express as px
 import matplotlib.pyplot as plt
-from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, classification_report
-import seaborn as sn
 from scipy.io import loadmat
 import pandas as pd
 import numpy as np
@@ -30,7 +28,7 @@ for i in range(1, n+1):
 plt.savefig(r'C:\Users\ladan\Desktop\clustring\IP_Bands.png'IP_Bands.png')
             
 #Visualize the Ground Truth
-plt.figure(figsize=(10, 8))
+plt.figure(figsize=(8, 6))
 plt.imshow(y, cmap='nipy_spectral')
 plt.colorbar()
 plt.savefig(r'C:\Users\ladan\Desktop\clustring\IP_GT.png')
@@ -87,7 +85,7 @@ for i in range(q.shape[0]):
     else:
         l.append(svm.predict(q.iloc[i, :-1].values.reshape(1, -1))) 
 clmap = np.array(l).reshape(145, 145).astype('float')
-plt.figure(figsize=(10, 8))
+plt.figure(figsize=(8, 10))
 plt.imshow(clmap, cmap='nipy_spectral')
 plt.colorbar()
 
