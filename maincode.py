@@ -44,13 +44,10 @@ def extract_pixels(X, y):
     return df
 df = extract_pixels(X, y)
 df.head()
-            
-#Statistics values for each cell
-df.iloc[:, :-1].describe()
 
 #Dimentionality Reduction:PCA
 pca = PCA(n_components = 40)
-dt = pca.fit_transform(df.iloc[:, :-1].values)#applying the PCA to all data
+dt = pca.fit_transform(df.iloc[:, :-1].values)
 q = pd.concat([pd.DataFrame(data = dt), pd.DataFrame(data = y.ravel())], axis = 1)
 q.columns = [f'PC-{i}' for i in range(1,41)]+['class']
 q.head()
