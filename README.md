@@ -4,7 +4,7 @@
    - Place the hyperspectral `.mat` files in the appropriate folder.
 
 2. **Run the Program**:
-   - Open the `HyperspectralImageClassifier.py` file.
+   - Open the `maincode.py` file.
    - Modify the file paths for `image_path` and `gt_path` as required.
 
 3. **Example Usage**:
