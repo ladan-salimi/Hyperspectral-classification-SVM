@@ -1,7 +1,6 @@
 
 ## How to Use
 1. **Set Up**:
-   - Ensure the required libraries are installed. Use `pip install -r requirements.txt` to install dependencies if a `requirements.txt` file is available.
    - Place the hyperspectral `.mat` files in the appropriate folder.
 
 2. **Run the Program**:
