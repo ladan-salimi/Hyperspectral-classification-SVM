@@ -92,15 +92,15 @@ class HyperspectralImageClassifier:
 # Example Usage
 if __name__ == "__main__":
     classifier = HyperspectralImageClassifier(
-        image_path=r'C:\Users\ladan\Desktop\clustring\Indian_pines_corrected.mat',
-        gt_path=r'C:\Users\ladan\Desktop\clustring\Indian_pines_gt.mat'
+        image_path=r'path\Indian_pines_corrected.mat',
+        gt_path=r'path\Indian_pines_gt.mat'
     )
 
     classifier.read_data()
-    classifier.visualize_bands(n=5, save_path=r'C:\Users\ladan\Desktop\clustring\IP_Bands.png')
-    classifier.visualize_ground_truth(save_path=r'C:\Users\ladan\Desktop\clustring\IP_GT.png')
-    classifier.extract_pixels(save_path=r'C:\Users\ladan\Desktop\clustring\Dataset.csv')
-    classifier.apply_pca(n_components=40, save_path=r'C:\Users\ladan\Desktop\clustring\IP_40_PCA.csv')
-    classifier.visualize_pca_bands(m=5, save_path=r'C:\Users\ladan\Desktop\clustring\IP_PCA_Bands.png')
+    classifier.visualize_bands(n=5, save_path=r'path\IP_Bands.png')
+    classifier.visualize_ground_truth(save_path=r'path\IP_GT.png')
+    classifier.extract_pixels(save_path=r'path\Dataset.csv')
+    classifier.apply_pca(n_components=40, save_path=r'path\IP_40_PCA.csv')
+    classifier.visualize_pca_bands(m=5, save_path=r'path\IP_PCA_Bands.png')
     classifier.train_svm()
-    classifier.generate_classification_map(save_path=r'C:\Users\ladan\Desktop\clustring\IP_Classification_Map.png')
+    classifier.generate_classification_map(save_path=r'path\IP_Classification_Map.png')
