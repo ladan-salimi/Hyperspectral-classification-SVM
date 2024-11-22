@@ -89,7 +89,7 @@ class HyperspectralImageClassifier:
         plt.show()
 
 
-# Example Usage
+# Usage
 if __name__ == "__main__":
     classifier = HyperspectralImageClassifier(
         image_path=r'path\Indian_pines_corrected.mat',
