@@ -1,7 +1,7 @@
 
 ## How to Use
 1. **Set Up**:
-   - Place the hyperspectral `.mat` files in the appropriate folder.
+   - Put the hyperspectral `.mat` files in the appropriate folder.
 
 2. **Run the Program**:
    - Open the `maincode.py` file.
