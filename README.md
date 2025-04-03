@@ -5,7 +5,7 @@
 
 2. **Run the Program**:
    - Open the `maincode.py` file.
-   - Modify the file paths for `image_path` and `gt_path` as required.
+   - Modify the file paths for `image_path` and `gt_path`.
 
 3. **Example Usage**:
    Modify the following section in the code to customize your workflow:
